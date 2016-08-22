@@ -20,9 +20,7 @@ This is nothing more than a light wrapper around a bundle of plugins. Options ar
 const reshape = require('reshape')
 const htmlStandards = require('spike-html-standards')
 
-reshape({
-  plugins: htmlStandards(/* options */)
-})
+reshape(htmlStandards(/* options */))
 ```
 
 By default, the html standard plugin pack includes:
