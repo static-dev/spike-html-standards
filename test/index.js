@@ -1,5 +1,8 @@
+const path = require('path')
+const fs = require('fs')
 const test = require('ava')
 const rewire = require('rewire')
+const Spike = require('spike-core')
 const htmlStandardsRewired = rewire('..')
 const htmlStandards = require('..')
 
@@ -52,4 +55,24 @@ test('options passed correctly', (t) => {
   t.truthy(out1.plugins.length === 6)
   t.falsy(out2.parser)
   t.truthy(out2.plugins[out2.plugins.length - 1].name === 'minifyPlugin')
+})
+
+test.cb('works with spike', (t) => {
+  const root = path.join(__dirname, 'spike')
+  const project = new Spike({
+    root,
+    matchers: { html: '**/*.sml' },
+    reshape: (ctx) => htmlStandards({ webpack: ctx, pageId: true })
+  })
+
+  project.on('error', t.end)
+  project.on('compile', () => {
+    const f1 = fs.readFileSync(path.join(root, 'public/index.html'), 'utf8')
+    const f2 = fs.readFileSync(path.join(root, 'public/nested/index.html'), 'utf8')
+    t.is(f1.trim(), '<p>index</p>')
+    t.is(f2.trim(), '<p>nested-index</p>')
+    t.end()
+  })
+
+  project.compile()
 })

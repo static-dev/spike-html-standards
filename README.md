@@ -52,6 +52,7 @@ Any of these plugins can be customized by passing options described below.
 | **filename** | Name of the file being compiled, used for error traces and as the include/layout root if not otherwise provided | |
 | **addDependencyTo** | Object with `addDependency` method that will get file paths for tracked deps from includes/layouts | |
 | **webpack** | Shortcut for webpack users to set the `root` and `addDependencyTo` options more easily. Pass webpack loader context. | |
+| **pageId** | Adds an `pageId` property to the locals that outputs a css-friendly id for the current page. Only valid when used with the `webpack` option within `spike` | `false` |
 | **delimiters** | Delimiters used for html-escaped expressions | `['{{', '}}']` |
 | **unescapeDelimiters** | Delimiters used for unescaped expressions | `['{{{', '}}}']` |
 | **markdown** | Options passed in to [markdown-it](https://github.com/markdown-it/markdown-it) constructor | `{ typographer: true, linkify: true }` |

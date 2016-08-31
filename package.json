@@ -4,7 +4,8 @@
   "version": "0.3.5",
   "author": "Jeff Escalante",
   "ava": {
-    "verbose": "true"
+    "verbose": "true",
+    "files": ["test/index.js"]
   },
   "bugs": "https://github.com/static-dev/spike-html-standards/issues",
   "dependencies": {
@@ -26,6 +27,7 @@
     "reshape": "^0.3.2",
     "rewire": "^2.5.2",
     "snazzy": "^4.0.1",
+    "spike-core": "^0.11.2",
     "standard": "^8.0.0"
   },
   "engines": {
