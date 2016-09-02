@@ -6,13 +6,9 @@
 
 > :warning: **This package is locked and in maintenance mode -- see [reshape/standard](https://github.com/reshape/standard) for future updates!** :warning:
 
-> **Note:** This project is in early development, and versioning is a little different. [Read this](http://markup.im/#q4_cRZ1Q) for more details.
-
 ### Installation
 
 `npm install spike-html-standards -S`
-
-> **Note:** This project is compatible with node v6+ only
 
 ### Usage
 
