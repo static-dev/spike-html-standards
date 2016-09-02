@@ -4,7 +4,7 @@
 
 [Spike html standards](https://spike.readme.io/docs/html-standards) plugin pack for reshape
 
-:warning: This package is locked and in maintenance mode -- see [reshape/standard](https://github.com/reshape/standard) for future updates! :warning:
+> :warning: **This package is locked and in maintenance mode -- see [reshape/standard](https://github.com/reshape/standard) for future updates!** :warning:
 
 > **Note:** This project is in early development, and versioning is a little different. [Read this](http://markup.im/#q4_cRZ1Q) for more details.
 
