@@ -1,5 +1,7 @@
 # Spike HTML Standard Plugin Pack
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/static-dev/spike-html-standards.svg)](https://greenkeeper.io/)
+
 [![npm](http://img.shields.io/npm/v/spike-html-standards.svg?style=flat)](https://badge.fury.io/js/spike-html-standards) [![tests](http://img.shields.io/travis/static-dev/spike-html-standards/master.svg?style=flat)](https://travis-ci.org/static-dev/spike-html-standards) [![dependencies](http://img.shields.io/david/static-dev/spike-html-standards.svg?style=flat)](https://david-dm.org/static-dev/spike-html-standards) [![coverage](http://img.shields.io/coveralls/static-dev/spike-html-standards.svg?style=flat)](https://coveralls.io/github/static-dev/spike-html-standards)
 
 [Spike html standards](https://spike.readme.io/docs/html-standards) plugin pack for reshape
